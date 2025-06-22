@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* General scrollbar styling */
+::-webkit-scrollbar {
+  height: 5px;
+  width: 7px;
+  background-color: #A5D6A7; /* light green */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2E7D32; /* deep green for thumb */
+}
+
+/* Base HTML setup */
+html {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif !important;
+  scroll-behavior: smooth;
+}
+
+/* Hero section background */
+.hero {
+  background-image: linear-gradient(rgba(10, 10, 10, 0), rgba(39, 40, 41, 0)),
+    url('./assets/bg-hero.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
