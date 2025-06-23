@@ -23,8 +23,8 @@ const Home = () => {
 
   // Category configuration
   const categories = [
-    { key: "Agriculture", translationKey: "homeSections.row1.col1.0" },
-    { key: "Food", translationKey: "homeSections.row1.col1.2" },
+    { key: "agriculture", translationKey: "homeSections.row1.col1.0" },
+    { key: "food", translationKey: "homeSections.row1.col1.2" },
     // { key: "Handicrafts", translationKey: "homeSections.row1.col1.1" },
 
     // { key: "Textiles", translationKey: "homeSections.row1.col1.3" },
@@ -83,7 +83,7 @@ const Home = () => {
         categoryVisibility[category.key] && (
           <ProductsByCategory
             key={category.key}
-            id={category.key === "Agriculture" ? "/" : category.key.toLowerCase()}
+            id={category.key === "agriculture" ? "/" : category.key.toLowerCase()}
             title={i18n.t(category.translationKey)}
             productCat={category.key}
           />

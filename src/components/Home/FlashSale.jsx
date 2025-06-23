@@ -15,6 +15,7 @@ const ProductsByCategory = ({ title, productCat }) => {
       setIsloading(true);
       try {
         const data = await fetchProductByCat(productCat);
+        console.log(data)
         setProducts(data || []); // Assuming the data has a `products` array
       } catch (error) {
         console.error("Error fetching agriculture products:", error);
